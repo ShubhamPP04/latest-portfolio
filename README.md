@@ -16,24 +16,22 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, Tailwi
 - **Type Safe**: Full TypeScript support
 - **Component Library**: Built with shadcn/ui components
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-1. Clone the repository:
+1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/ShubhamPP04/portfolio-website.git
 ```
 
-2. Install dependencies:
+2. Install dependencies
 ```bash
-npm install
+pnpm install
 ```
 
-3. Run the development server:
+3. Start the development server
 ```bash
-npm run dev
+pnpm dev
 ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📁 Project Structure
 
@@ -60,25 +58,6 @@ npm run dev
 - [MDX](https://mdxjs.com/) - Blog content
 - [Radix UI](https://www.radix-ui.com/) - Headless UI components
 
-## 📝 Blog
-
-The blog is powered by MDX. To add a new blog post:
-
-1. Create a new `.mdx` file in the `content` directory
-2. Add frontmatter with title, date, and summary
-3. Write your content in MDX format
-
-Example:
-```mdx
----
-title: "My New Post"
-publishedAt: "2024-01-01"
-summary: "A brief summary of the post"
----
-
-Your content here...
-```
-
 ## 🎨 Customization
 
 1. Update `src/data/resume.tsx` with your information
@@ -86,48 +65,20 @@ Your content here...
 3. Add your own components in `src/components`
 4. Customize animations in `src/components/magicui`
 
-## 📱 Components
+## 🚀 Deployment
 
-The project includes several reusable components:
+This website is deployed on [Vercel](https://vercel.com). You can deploy your own version by clicking the button below:
 
-- `BlurFade`: Fade-in animation with blur effect
-- `BlurFadeText`: Text animation with character-by-character support
-- `Dock`: macOS-style dock component
-- `ProjectCard`: Card component for showcasing projects
-- `ResumeCard`: Card component for work experience
-
-## 🔧 Development
-
-```bash
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-
-# Lint code
-npm run lint
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FShubhamPP04%2Fportfolio-website)
 
 ## 📞 Contact
 
 For any questions or feedback, feel free to reach out:
 
-- Twitter: [@vedantsx](https://twitter.com/vedantsx)
-- Email: vedantanand.in@gmail.com
-- Website: [vedant-dev.tech](https://vedant-dev.tech)
+- Email: shubhampp8001@gmail.com
+- LinkedIn: [Shubham Kumar](https://in.linkedin.com/in/shubham-kumar-48420b249)
+- Website: [shubham-portfolio.vercel.app](https://shubham-portfolio.vercel.app)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
