@@ -165,7 +165,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://job-portal-next.vercel.app",
+          href: "https://job-portal-eight-eosin.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
