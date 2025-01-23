@@ -114,7 +114,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://doc-collect.vercel.app",
+          href: "https://nonu-doc.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
