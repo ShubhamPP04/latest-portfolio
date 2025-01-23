@@ -164,7 +164,7 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                During my time at university, I have participated in several prestigious competitions, securing top positions in KIMO's-Edge Competition (1st position twice), IEEE GTBIT Devathon (1st position), and IEEE GTBIT Designathon (3rd position). These achievements showcase my technical excellence and problem-solving abilities.
+                During my time at university, I have participated in several prestigious competitions, securing top positions in KIMO&apos;s-Edge Competition (1st position twice), IEEE GTBIT Devathon (1st position), and IEEE GTBIT Designathon (3rd position). These achievements showcase my technical excellence and problem-solving abilities.
                 </p>
               </div>
             </div>
