@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full Stack Developer with expertise in React.js, Node.js, and Next.js. Passionate about creating efficient and user-friendly web applications.",
   summary:
-    "I am pursuing a degree in Information Technology at Guru Tegh Bahadur Institute of Technology. I have worked on various projects and completed internships at CROPC and EaseMyRoom, gaining valuable experience in front-end development and API integration.",
+    "I am a full-stack developer with a passion for creating beautiful and functional web applications. I have experience with a variety of technologies, including React, Node.js, and Next.js. I am a quick learner and am always looking for new challenges.",
   avatarUrl: "/profile.jpeg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -19,7 +19,6 @@ export const DATA = {
     "C++",
     "C",
     "Java",
-    "Python",
     "HTML/CSS",
     "JavaScript",
     "SQL",
@@ -28,6 +27,7 @@ export const DATA = {
     "Next.js",
     "MySQL",
     "MongoDB",
+    "Github",
     "Supabase",
     "WordPress"
   ],
@@ -47,22 +47,20 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://x.com/Shubham13337619",
-        icon: Icons.x,
-        navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-        navbar: false,
-      },
     },
   },
 
   work: [
+    {
+      company: "Akai Space",
+      badges: [],
+      location: "New Delhi",
+      title: "Front-End Developer Intern",
+      start: "January 2025",
+      end: "May 2025",
+      logoUrl: "/akai_space_logo.jpg",
+      description: "Led the end-to-end design and development of the official Akai Space website, transforming the company’s online presence. Collaborated with the Akai Space team to understand business needs and translate them into a modern, user-friendly website.",
+    },
     {
       company: "Climate Resilient Observing Systems Promotion Council (CROPC)",
       badges: [],
@@ -71,8 +69,7 @@ export const DATA = {
       start: "August 2024",
       end: "September 2024",
       logoUrl: "/cropc.png",
-      description:
-        "Led the front-end development of the CROPC website using React.js and Bootstrap. Engineered API integrations for real-time weather data and implemented Google Maps API for location tracking. Redesigned key components for better user experience across platforms.",
+      description: "Led the front-end development of the CROPC website, significantly enhancing user interface design and improving site responsiveness with React.js and Bootstrap. Engineered seamless API integrations for real-time weather data and news updates, leveraging Axios and React to provide dynamic content to users.",
     },
     {
       company: "EaseMyRoom",
@@ -82,14 +79,13 @@ export const DATA = {
       start: "May 2023",
       end: "August 2023",
       logoUrl: "/easemyroom.jpeg",
-      description:
-        "Spearheaded front-end development using React.js and Bootstrap, optimizing page load speeds and implementing responsive layouts. Collaborated with back-end team for API integration and conducted cross-browser compatibility testing.",
+      description: "Spearheaded the front-end development of the EaseMyRoom platform, enhancing user interface design and optimizing page load speeds to ensure seamless customer experiences. Developed dynamic, responsive layouts using React.js and Bootstrap, improving the platform’s accessibility and user engagement across multiple devices.",
     },
   ],
   education: [
     {
-      school: "Guru Tegh Bahadur Institute of Technology",
-      degree: "Bachelor of Technology in Information Technology",
+      school: "Guru Tegh Bahadur Institute of Technology (GGSIPU)",
+      degree: "Bachelor of Technology in Information Technology (CGPA - 9.26)",
       start: "2021",
       end: "2025",
       location: "New Delhi",
@@ -99,17 +95,39 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Mind-It: AI-powered Notes with Web Search",
+      dates: "April 2025",
+      active: true,
+      description: "Implemented real-time up-to-date web search capabilities by integrating OpenRouter’s API and Exa search. Enhanced the system architecture to support multiple AI models (Gemini, Llama, Mistral) with model-specific feature toggling, improving user experience and content quality. Designed a source citation system for web search results to improve information credibility and transparency.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "OpenRouter API",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://mind-it.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ShubhamPP04/mind-it",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
+    {
       title: "DocCollect: Docs and Notes Platform",
       dates: "October 2024",
       active: true,
-      description:
-        "A full-stack document management app with features for document upload, deletion, categorization, and note-taking. Includes real-time search, dark/light mode, and smooth animations.",
+      description: "Developed a full-stack document management app using Next.js 14, TypeScript, Tailwind CSS, and integrated Supabase for authentication, data storage, and file management. Implemented document upload, deletion, and categorization features with a note-taking system. Built a responsive UI with dark/light mode and smooth animations using Framer Motion.",
       technologies: [
-        "Next.js 14",
+        "Next.js",
         "TypeScript",
         "Supabase",
         "Tailwind CSS",
-        "Framer Motion"
       ],
       links: [
         {
@@ -128,13 +146,11 @@ export const DATA = {
       title: "CROPC Website",
       dates: "August 2024",
       active: true,
-      description:
-        "Developed the CROPC website with responsive UI, integrated weather and news APIs, and implemented Google Maps for enhanced functionality.",
+      description: "Developed the CROPC website using React.js and Bootstrap for a responsive UI. Integrated weather and news APIs with Google Maps to deliver dynamic, interactive content.",
       technologies: [
         "React.js",
         "JavaScript",
         "Bootstrap",
-        "APIs"
       ],
       links: [
         {
@@ -142,62 +158,31 @@ export const DATA = {
           href: "https://cropc.org",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/ShubhamPP04/CROPC-Website",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-    },
-    {
-      title: "Job Portal",
-      dates: "July 2024",
-      active: true,
-      description:
-        "Built a job portal with user authentication, job listings, application management, and AI chatbot assistant for recommendations.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Express.js",
-        "MongoDB",
-        "Redux"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://job-portal-eight-eosin.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ShubhamPP04/Job-Portal",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
     },
   ],
-  hackathons: [
+  achievements: [
     {
-      title: "KIMO's-Edge Competition (1st Position)",
-      dates: "2023",
-      location: "GTBIT, New Delhi",
-      description: "Secured 1st position twice, outperforming 150 participants with innovative solutions.",
-      image: "/kimo_ai_logo.jpeg",
+      title: "TCS CodeVita Season 12 (Round 2)",
+      dates: "2024",
+      location: "Online",
+      description: "Secured an All India Rank of 680 in TCS CodeVita Season 12 (Round 2), one of the world’s largest global coding competitions.",
+      image: "https://logowik.com/content/uploads/images/tcs-tata-consultancy-services2792.logowik.com.webp",
       links: [],
     },
     {
-      title: "IEEE GTBIT Devathon (1st Position)",
+      title: "Devathon (1st Position)",
       dates: "2023",
-      location: "GTBIT & IEEE IIIT-Delhi",
-      description: "Achieved 1st position in the development competition organized in collaboration with IEEE IIIT-Delhi.",
+      location: "GTBIT, New Delhi",
+      description: "Achieved 1st position in Devathon organized by IEEE GTBIT in collaboration with IEEE IIIT-Delhi.",
       image: "/gtbit.png",
       links: [],
     },
     {
-      title: "IEEE GTBIT Designathon (3rd Position)",
+      title: "Designathon (3rd Position)",
       dates: "2023",
-      location: "GTBIT & IEEE IIIT-Delhi",
-      description: "Secured 3rd position in the design competition organized in collaboration with IEEE IIIT-Delhi.",
+      location: "GTBIT, New Delhi",
+      description: "Achieved 3rd position in Designathon organized by IEEE GTBIT in collaboration with IEEE IIIT-Delhi.",
       image: "/gtbit.png",
       links: [],
     },

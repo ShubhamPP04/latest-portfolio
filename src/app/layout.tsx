@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     google: "",
     yandex: "",
   },
+  icons: {
+    icon: "/supabase-logo.webp",
+  },
 };
 
 export default function RootLayout({
@@ -61,6 +64,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <link rel="icon" href="/supabase-logo.webp" type="image/webp" />
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {children}

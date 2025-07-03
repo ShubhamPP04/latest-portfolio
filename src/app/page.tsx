@@ -30,12 +30,14 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
+            <div className="flex flex-col items-center">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Avatar className="size-28 border">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              </BlurFade>
+            </div>
           </div>
         </div>
       </section>
@@ -148,26 +150,26 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="achievements">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  Achievements
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  I like to challenge myself
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                During my time at university, I have participated in several prestigious competitions, securing top positions in KIMO&apos;s-Edge Competition (1st position twice), IEEE GTBIT Devathon (1st position), and IEEE GTBIT Designathon (3rd position). These achievements showcase my technical excellence and problem-solving abilities.
+                  I have participated in several competitions and secured top positions. These achievements showcase my technical excellence and problem-solving abilities.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.achievements.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
